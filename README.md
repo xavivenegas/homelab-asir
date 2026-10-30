@@ -6,8 +6,8 @@ Laboratorio de prácticas del ciclo ASIR: Windows Server, Active Directory, DNS/
 
 | Fase | Contenido | Estado |
 |---|---|---|
-| [01](01-windows-server-ad/) | Windows Server 2025 y Active Directory (`lab.local`) | En curso |
-| 02 | DNS y DHCP | Pendiente |
+| [01](01-windows-server-ad/) | Windows Server 2025 y Active Directory (`lab.local`) | Completada |
+| 02 | Reenviador DNS, DHCP y revisión de `dcdiag` | Pendiente |
 | 03 | Integración de Ubuntu Server en el dominio | Pendiente |
 
 ## Esquema de red
