@@ -7,17 +7,18 @@ Laboratorio de prácticas del ciclo ASIR: Windows Server, Active Directory, DNS/
 | Fase | Contenido | Estado |
 |---|---|---|
 | [01](01-windows-server-ad/) | Windows Server 2025 y Active Directory (`lab.local`) | Completada |
-| 02 | Reenviador DNS, DHCP y revisión de `dcdiag` | Pendiente |
-| 03 | Integración de Ubuntu Server en el dominio | Pendiente |
+| [02](02-dns-dhcp/) | Reenviadores DNS, hora (NTP) y DHCP | Configurada (falta probar con un cliente) |
+| 03 | Conexión de un servidor Ubuntu físico, unión al dominio y monitorización con Zabbix | Pendiente |
 
 ## Esquema de red
 
 ```
-Red interna "lab-asir" (10.10.10.0/24)
+Portátil (VirtualBox)
+  DC01 (Windows Server 2025)
+   - Red interna "lab-asir": 10.10.10.10/24 (DHCP 10.10.10.100-200)
+   - NAT: salida a internet
 
-DC01 (Windows Server)  <---->  Ubuntu Server
-10.10.10.10                    (por definir)
-AD DS + DNS
+Servidor Ubuntu físico (por cable)  --->  por conectar a DC01 (Fase 3)
 ```
 
 > Nota: no se publican contraseñas, claves ni datos personales en este repositorio.
